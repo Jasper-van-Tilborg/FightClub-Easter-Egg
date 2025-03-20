@@ -7,27 +7,28 @@ body {
 }
 
 #logo-container {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 150px;
-  height: 150px;
+  position: relative;
+  width: 400px;
+  height: auto;
   cursor: pointer;
 }
 
-#logo-met-hond,
-#logo-zonder-hond {
-  width: 300px;
+#logo-met-hond img,
+#logo-zonder-hond img {
+  width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 #hond {
+  top: 18px;
+  left: 19px;
   position: absolute;
-  width: 80px;
+  width: 108px;
   height: auto;
-  top: 50px; /* Startpositie van de hond */
-  left: 50px; /* Startpositie van de hond */
-  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease; /* Animatie voor het springen */
+  display: none;
+  z-index: 10;
+  transition: all 1s ease-in-out;
 }
 
 #score {
@@ -36,4 +37,8 @@ body {
   right: 10px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.hond-animatie {
+  transform: scale(4) translateX(50px) translateY(100px);
 }

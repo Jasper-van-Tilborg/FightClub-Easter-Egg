@@ -1,15 +1,23 @@
+// Selecteer de elementen
 const logoMetHond = document.getElementById("logo-met-hond");
 const logoZonderHond = document.getElementById("logo-zonder-hond");
 const hond = document.getElementById("hond");
 
-logoMetHond.addEventListener("click", () => {
-  // Verander het logo naar de versie zonder hond
-  logoMetHond.style.display = "none";
-  logoZonderHond.style.display = "block";
+// Controleer of de elementen correct zijn geladen
+if (logoMetHond && logoZonderHond && hond) {
+  logoMetHond.addEventListener("click", () => {
+    // Verander het logo naar de versie zonder hond
+    logoMetHond.style.display = "none";
+    logoZonderHond.style.display = "block";
 
-  // Laat de hond uit het logo springen
-  hond.style.display = "block";
-  hond.style.top = "200px"; // Laat de hond naar beneden springen
-  hond.style.left = "100px"; // Beweeg de hond iets naar rechts
-  hond.style.transform = "scale(1.2)"; // Vergroot de hond een beetje
-});
+    // Laat de hond uit het logo springen
+    hond.style.display = "block"; // Zorg ervoor dat de hond zichtbaar wordt
+    setTimeout(() => {
+      hond.classList.add("hond-animatie");
+    }, 10); // Kleine vertraging om de animatie te laten werken
+  });
+} else {
+  console.error(
+    "Een of meer elementen konden niet worden gevonden. Controleer de ID's in je HTML."
+  );
+}
