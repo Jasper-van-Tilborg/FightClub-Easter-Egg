@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+#logo-met-hond,
+#logo-zonder-hond {
+  width: 300px;
+  height: auto;
+}
+
+#hond {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  top: 50px; /* Startpositie van de hond */
+  left: 50px; /* Startpositie van de hond */
+  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease; /* Animatie voor het springen */
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}

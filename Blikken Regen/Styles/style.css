@@ -1,0 +1,21 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Zorg ervoor dat de blikjes buiten het scherm verdwijnen */
+}
+
+.blikje {
+  position: absolute;
+  background-image: url("../Images/blikje_EnoRm.png"); /* Zorg ervoor dat je een afbeelding van een blikje hebt */
+  background-size: cover;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
