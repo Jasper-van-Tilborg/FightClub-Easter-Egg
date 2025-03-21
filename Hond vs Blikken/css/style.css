@@ -21,10 +21,10 @@ body {
 }
 
 #hond {
-  top: 18px;
-  left: 19px;
+  top: 40px;
+  left: 38px;
   position: absolute;
-  width: 108px;
+  width: 68px;
   height: auto;
   display: none;
   z-index: 10;
@@ -40,5 +40,5 @@ body {
 }
 
 .hond-animatie {
-  transform: scale(4) translateX(50px) translateY(100px);
+  transform: scale(2.6) translateX(75px) translateY(175px);
 }

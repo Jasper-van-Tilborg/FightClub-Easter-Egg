@@ -46,6 +46,7 @@ function startCountdown() {
 
   const interval = setInterval(() => {
     countdown--;
+
     if (countdown > 0) {
       countdownElement.textContent = countdown; // Update de countdown
     } else {
