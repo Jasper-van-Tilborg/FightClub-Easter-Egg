@@ -58,22 +58,23 @@ body {
 
 #enorm-trigger {
   position: absolute;
-  top: 7535px; /* Pas deze waarde aan om het woord "enorm" te bedekken */
-  left: 740px; /* Pas deze waarde aan om het woord "enorm" te bedekken */
-  width: 60px; /* Breedte van de klikbare zone */
-  height: 20px; /* Hoogte van de klikbare zone */
+  top: 7535px;
+  left: 740px;
+  width: 60px;
+  height: 20px;
   cursor: pointer;
-  /* Semi-transparante achtergrond voor debugging (verwijder later) */
-  z-index: 1000; /* Zorg ervoor dat de klikbare zone boven alles staat */
+  background-color: #333;
+  opacity: 0.3;
+  z-index: 1000;
 }
 
 .blikje {
   position: fixed;
   width: 50px;
   height: 50px;
-  background-image: url("../images/blikje_enorm.png"); /* Zorg ervoor dat je de juiste afbeelding gebruikt */
+  background-image: url("../images/blikje_enorm.png");
   background-size: cover;
   background-repeat: no-repeat;
-  top: -100px; /* Startpositie boven het scherm */
-  z-index: 100; /* Zorg ervoor dat de blikjes zichtbaar zijn */
+  top: -100px;
+  z-index: 100;
 }
