@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-y: scroll;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
@@ -40,5 +40,5 @@ body {
 }
 
 .hond-animatie {
-  transform: scale(2.6) translateX(75px) translateY(175px);
+  transform: scale(2.6) translateX(125px) translateY(155px);
 }
