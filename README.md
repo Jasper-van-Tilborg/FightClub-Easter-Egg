@@ -1,6 +1,6 @@
 # 🥊 FightClub-Easter-Egg
 
-Welkom bij **FightClub-Easter-Egg**! Dit project, ontwikkeld tijdens semester 2, is geïnspireerd door de iconische film _Fight Club_ en bevat een interactieve Easter Egg 🐣 vol verrassingen en verwijzingen naar de film.
+Welkom bij **FightClub-Easter-Egg**! Dit project, ontwikkeld tijdens semester 2, bevat interactieve Easter Eggs 🐣 vol verrassingen en verwijzingen naar EnoRm
 
 ## 📂 Inhoud van de Repository
 

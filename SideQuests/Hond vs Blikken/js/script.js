@@ -16,10 +16,6 @@ countdownElement.style.color = "#000";
 countdownElement.style.display = "none"; // Verberg standaard
 document.body.appendChild(countdownElement);
 
-// Variabelen voor de positie van de hond
-let hondY = 50; // Startpositie Y van de hond
-let isMoving = false; // Lock-mechanisme om dubbele bewegingen te voorkomen
-
 // Controleer of de elementen correct zijn geladen
 if (logoMetHond && logoZonderHond && hond) {
   logoMetHond.addEventListener("click", () => {
@@ -48,6 +44,12 @@ function startCountdown() {
   countdownElement.style.display = "block"; // Toon de countdown
   countdownElement.textContent = countdown;
 
+  // Wacht iets langer voordat de springende hond wordt vervangen
+  setTimeout(() => {
+    hond.style.display = "none"; // Verberg de springende hond
+    voegSpelHondToe(); // Voeg de nieuwe spelhond toe
+  }, 1000); // Wacht 1 seconde extra voordat de wissel plaatsvindt
+
   const interval = setInterval(() => {
     countdown--;
 
@@ -62,35 +64,10 @@ function startCountdown() {
   }, 1000); // Update elke seconde
 }
 
-// Functie om de hond te laten bewegen met de pijltjestoetsen
-document.addEventListener("keydown", (event) => {
-  const stapGrootte = 100; // Hoeveel pixels de hond per toetsdruk beweegt
-
-  // Controleer of de toets een pijltjestoets is
-  if (event.repeat || isMoving) return; // Voorkom herhaling of dubbele bewegingen
-
-  isMoving = true; // Zet de lock aan
-
-  switch (event.key) {
-    case "ArrowUp": // Pijltje omhoog
-      hondY = Math.max(0, hondY + stapGrootte); // Zorg dat de hond niet buiten het scherm gaat
-      break;
-    case "ArrowDown": // Pijltje omlaag
-      hondY = Math.min(
-        window.innerHeight - hond.offsetHeight,
-        hondY + stapGrootte
-      );
-      break;
-    default:
-      isMoving = false; // Zet de lock uit als het geen pijltjestoets is
-      return;
-  }
-
-  // Update de positie van de hond
-  hond.style.top = `${hondY}px`;
-
-  // Wacht een korte tijd voordat de lock wordt vrijgegeven
-  setTimeout(() => {
-    isMoving = false; // Zet de lock uit
-  }, 100); // 100ms is de tijd die nodig is om de beweging af te ronden
-});
+// Functie om de spelhond toe te voegen
+function voegSpelHondToe() {
+  // Maak een nieuw element voor de spelhond
+  const spelHond = document.createElement("div");
+  spelHond.id = "spel-hond";
+  document.body.appendChild(spelHond);
+}

@@ -1,51 +1,51 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    background-image: url(../Images/Fight\ club\ website.png);
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  background-image: url(../Images/fightclubwebsite.png);
+  background-size: cover;
 }
 
 img {
-    cursor: pointer;
-    max-width: 50%;
-    height: auto;
+  cursor: pointer;
+  max-width: 50%;
+  height: auto;
 }
 
 @keyframes float {
-    0% {
-        transform: translateX(-50%) translateY(0) rotate(-15deg);
-    }
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(-15deg);
+  }
 
-    50% {
-        transform: translateX(-50%) translateY(-10px) rotate(-5deg);
-    }
+  50% {
+    transform: translateX(-50%) translateY(-10px) rotate(-5deg);
+  }
 
-    100% {
-        transform: translateX(-50%) translateY(0) rotate(-15deg);
-    }
+  100% {
+    transform: translateX(-50%) translateY(0) rotate(-15deg);
+  }
 }
 
 #canImage {
-    display: none;
-    position: fixed;
-    bottom: -1000px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: bottom 1.5s ease-in-out;
+  display: none;
+  position: fixed;
+  bottom: -1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1.5s ease-in-out;
 }
 
 #canImage.show {
-    bottom: 10px;
-    animation: float 1.5s ease-in-out infinite;
+  bottom: 10px;
+  animation: float 1.5s ease-in-out infinite;
 }
 
 #canImage.hide {
-    bottom: -2500px;
-    transition: bottom 1.5s ease-in-out;
+  bottom: -2500px;
+  transition: bottom 1.5s ease-in-out;
 }
