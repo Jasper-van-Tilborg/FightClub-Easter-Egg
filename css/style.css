@@ -107,3 +107,15 @@ body {
 .hond-animatie {
   transform: scale(2.5) translateX(125px) translateY(155px);
 }
+
+#spel-hond {
+  position: absolute;
+  width: 170px; /* Breedte van de spelhond */
+  height: 108px; /* Hoogte van de spelhond */
+  background-image: url("../images/spel_hond.png"); /* Zorg ervoor dat je de juiste afbeelding gebruikt */
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 395px; /* Startpositie van de spelhond */
+  left: 299px; /* Horizontale startpositie van de spelhond */
+  z-index: 110; /* Zorg ervoor dat de spelhond boven andere elementen staat */
+}
