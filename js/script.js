@@ -113,6 +113,7 @@ countdownElement.style.fontSize = "48px";
 countdownElement.style.fontWeight = "bold";
 countdownElement.style.color = "#fff";
 countdownElement.style.display = "none";
+countdownElement.style.fontFamily = "Arial, sans-serif";
 document.body.appendChild(countdownElement);
 
 // Controleer of de elementen bestaan
@@ -176,7 +177,7 @@ function vervangHondMetSpelHond() {
   spelHond.style.backgroundSize = "cover";
   spelHond.style.backgroundRepeat = "no-repeat";
   spelHond.style.top = "430px"; // Startpositie van de spelhond
-  spelHond.style.left = "327px";
+  spelHond.style.left = "333px";
   spelHond.style.zIndex = "110";
   document.body.appendChild(spelHond);
 
