@@ -58,8 +58,8 @@ body {
 
 #enorm-trigger {
   position: absolute;
-  top: 8507px;
-  left: 840px;
+  top: 6744px;
+  left: 660px;
   width: 60px;
   height: 20px;
   cursor: pointer;
@@ -76,4 +76,34 @@ body {
   background-repeat: no-repeat;
   top: -100px;
   z-index: 100;
+}
+
+#logo-container {
+  position: absolute;
+  top: 36px;
+  left: 28px;
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+#logo-met-hond,
+#logo-zonder-hond {
+  width: 100%;
+  height: auto;
+}
+
+#hond {
+  position: absolute;
+  top: 70px;
+  left: 59px;
+  width: 58px;
+  height: auto;
+  display: block;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+}
+
+.hond-animatie {
+  transform: scale(2.5) translateX(125px) translateY(155px);
 }

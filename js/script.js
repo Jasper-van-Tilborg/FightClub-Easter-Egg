@@ -96,3 +96,28 @@ function genereerBlikje(onVerwijder) {
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+// Selecteer de benodigde elementen
+const logoMetHond = document.getElementById("logo-met-hond");
+const logoZonderHond = document.getElementById("logo-zonder-hond");
+const hond = document.getElementById("hond");
+
+// Controleer of de elementen bestaan
+if (logoMetHond && logoZonderHond && hond) {
+  // Voeg een klikgebeurtenis toe aan het logo met de hond
+  logoMetHond.addEventListener("click", () => {
+    // Verberg het logo met de hond en toon het logo zonder de hond
+    logoMetHond.style.display = "none";
+    logoZonderHond.style.display = "block";
+
+    // Toon de hond en start de animatie
+    hond.style.display = "block";
+    setTimeout(() => {
+      hond.classList.add("hond-animatie"); // Voeg de animatieklasse toe
+    }, 10);
+  });
+} else {
+  console.error(
+    "Een of meer elementen konden niet worden gevonden. Controleer de ID's in je HTML."
+  );
+}
