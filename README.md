@@ -20,3 +20,4 @@ Welkom bij **FightClub-Easter-Egg**! Dit project, ontwikkeld tijdens semester 2,
    ```bash
    git clone https://github.com/Jasper-van-Tilborg/FightClub-Easter-Egg.git
    ```
+2. **Gebruik een resolutie van 1920x1080, zodat alle Easter Eggs goed tot hun recht komen ;)**
